@@ -7,6 +7,12 @@
         <Nullable>enable</Nullable>
         <AssemblyName>AggregateGroot.Cli</AssemblyName>
         <RootNamespace>AggregateGroot.Cli</RootNamespace>
+        <Version>0.1.0</Version>
+        <PackageId>AggregateGroot.Cli</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>ag</ToolCommandName>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
