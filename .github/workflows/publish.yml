@@ -28,7 +28,7 @@ jobs:
     - name: Build
       run: dotnet build $SOLUTION_FILE --no-restore -c Release
 
-    - name: Pack Commands
+    - name: Pack Solution
       run: dotnet pack $SOLUTION_FILE -c Release
 
     - name: Push Commands Package
