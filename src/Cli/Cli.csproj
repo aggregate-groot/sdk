@@ -13,6 +13,7 @@
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>ag</ToolCommandName>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

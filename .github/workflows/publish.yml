@@ -1,0 +1,35 @@
+name: Publish
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      SOLUTION_FILE: ./src/Cli/Cli.csproj
+
+    steps:
+
+    - name: Checkout Source
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 7.0.x
+        include-prerelease: true
+
+    - name: Restore dependencies
+      run: dotnet restore $SOLUTION_FILE
+
+    - name: Build
+      run: dotnet build $SOLUTION_FILE --no-restore -c Release
+
+    - name: Pack Commands
+      run: dotnet pack $SOLUTION_FILE -c Release
+
+    - name: Push Commands Package
+      run: dotnet nuget push src/Cli/bin/**/*.nupkg --api-key ${{ secrets.NUGET_PUBLISH_KEY }} --source https://api.nuget.org/v3/index.json
