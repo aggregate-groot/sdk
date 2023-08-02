@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>AggregateGroot.CliCommands</AssemblyName>
+        <RootNamespace>AggregateGroot.CliCommands</RootNamespace>
+        <Version>1.0.1</Version>
+        <PackageId>AggregateGroot.CliCommands</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>David Palumbo</Authors>  
+        <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
+    </PropertyGroup>
+
+</Project>
