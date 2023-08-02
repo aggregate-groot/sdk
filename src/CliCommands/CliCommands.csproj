@@ -14,4 +14,8 @@
         <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.2" />
+    </ItemGroup>
+
 </Project>
