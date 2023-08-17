@@ -15,7 +15,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="CliWrap" Version="3.6.4" />
       <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.2" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     </ItemGroup>
 
 </Project>
