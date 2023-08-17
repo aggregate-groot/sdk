@@ -9,7 +9,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      SOLUTION_FILE: ./src/Cli/Cli.csproj
+      SOLUTION_FILE: ./src/AggregateGroot.Sdk.sln
 
     steps:
 
