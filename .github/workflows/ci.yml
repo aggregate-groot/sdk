@@ -2,7 +2,7 @@ name: Publish
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
 
 jobs:
   build:
@@ -30,9 +30,3 @@ jobs:
 
     - name: Test
       run: dotnet test $SOLUTION_FILE --no-restore --no-build -c Release
-
-    - name: Pack Solution
-      run: dotnet pack $SOLUTION_FILE -c Release
-
-    - name: Push Commands Package
-      run: dotnet nuget push src/Cli/bin/**/*.nupkg --api-key ${{ secrets.NUGET_PUBLISH_KEY }} --source https://api.nuget.org/v3/index.json
