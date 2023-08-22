@@ -34,5 +34,5 @@ jobs:
     - name: Pack Solution
       run: dotnet pack $SOLUTION_FILE -c Release
 
-    - name: Push Commands Package
-      run: dotnet nuget push src/Cli/bin/**/*.nupkg --api-key ${{ secrets.NUGET_PUBLISH_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+    - name: Push Packages
+      run: dotnet nuget push src/**/bin/**/*.nupkg --api-key ${{ secrets.NUGET_PUBLISH_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
