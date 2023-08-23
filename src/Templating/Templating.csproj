@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <AssemblyName>AggregateGroot.Sdk.Templating</AssemblyName>
+      <RootNamespace>AggregateGroot.Sdk.Templating</RootNamespace>
+    </PropertyGroup>
+
+</Project>
