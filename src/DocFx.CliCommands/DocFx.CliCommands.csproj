@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <AssemblyName>AggregateGroot.Templating</AssemblyName>
-        <RootNamespace>AggregateGroot.Templating</RootNamespace>
+        <AssemblyName>AggregateGroot.DocFx.CliCommands</AssemblyName>
+        <RootNamespace>AggregateGroot.DocFx.CliCommands</RootNamespace>
         <Version>0.1.0</Version>
-        <PackageId>AggregateGroot.Templating</PackageId>
+        <PackageId>AggregateGroot.DocFx.CliCommands</PackageId>
         <PackageVersion>$(Version)</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>David Palumbo</Authors>
@@ -12,8 +12,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="CliWrap" Version="3.6.4" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+      <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
+      <ProjectReference Include="..\Templating\Templating.csproj" />
     </ItemGroup>
 
 </Project>
