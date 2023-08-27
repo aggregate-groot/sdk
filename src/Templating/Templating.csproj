@@ -1,8 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-      <AssemblyName>AggregateGroot.Sdk.Templating</AssemblyName>
-      <RootNamespace>AggregateGroot.Sdk.Templating</RootNamespace>
+        <AssemblyName>AggregateGroot.Templating</AssemblyName>
+        <RootNamespace>AggregateGroot.Templating</RootNamespace>
+        <Version>0.1.0</Version>
+        <PackageId>AggregateGroot.Temlating</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>David Palumbo</Authors>
+        <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CliWrap" Version="3.6.4" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    </ItemGroup>
 
 </Project>
