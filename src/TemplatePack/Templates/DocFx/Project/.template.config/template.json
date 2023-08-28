@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Aggregate Groot",
+    "classifications": [ "markdown" ],
+    "identity": "AggregateGroot.DocFx.Project",
+    "name": "DocFx Project",
+    "shortName": "ag-docfx-project",
+    "sourceName": "DocFxProject",
+    "tags": {
+        "language": "",
+        "type": "project"
+    },
+    "symbols": {
+        "source": {
+            "replaces": "DocFxProject",
+            "type": "bind",
+            "datatype": "text",
+            "binding": "sourceName"
+        }
+     }
+  }
