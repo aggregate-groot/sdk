@@ -3,6 +3,9 @@
 using McMaster.Extensions.CommandLineUtils;
 using Microsoft.Extensions.DependencyInjection;
 
+using AggregateGroot.CliCommands;
+using AggregateGroot.Templating;
+
 namespace AggregateGroot.Cli
 {
     /// <summary>
@@ -21,6 +24,8 @@ namespace AggregateGroot.Cli
         {         
             ServiceProvider services = new ServiceCollection()
                 .AddSingleton(PhysicalConsole.Singleton)
+                .AddCliCommands()
+                .AddProjectTemplating()
                 .BuildServiceProvider();
 
             CommandLineApplication<RootCommand> application = new ();
