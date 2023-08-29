@@ -1,18 +1,18 @@
-name: CI
+name: CI - Template Pack
 
 on:
   push:
     branches: [ develop ]
     paths:
-      - 'src/**'
-      - '.github/workflows/ci.yml'
+        - 'TemplatePack/**'
+        - '.github/workflows/ci-template-pack.yml'
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
     env:
-      SOLUTION_FILE: ./src/AggregateGroot.Sdk.sln
+      PROJECT_FILE: ./TemplatePack/TemplatePack.csproj
 
     steps:
 
@@ -26,10 +26,7 @@ jobs:
         include-prerelease: true
 
     - name: Restore dependencies
-      run: dotnet restore $SOLUTION_FILE
+      run: dotnet restore $PROJECT_FILE
 
     - name: Build
-      run: dotnet build $SOLUTION_FILE --no-restore -c Release
-
-    - name: Test
-      run: dotnet test $SOLUTION_FILE --no-restore --no-build -c Release
+      run: dotnet build $PROJECT_FILE --no-restore -c Release
