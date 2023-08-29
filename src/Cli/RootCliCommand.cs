@@ -3,12 +3,15 @@ using System.Reflection;
 
 using McMaster.Extensions.CommandLineUtils;
 
+using AggregateGroot.DocFx.CliCommands;
+
 namespace AggregateGroot.Cli
 {
     /// <summary>
     /// Represents the root command for the CLI.
     /// </summary>
     [ExcludeFromCodeCoverage]
+    [Subcommand(typeof(DocFxCliCommand))]
     public class RootCommand
     {
         /// <summary>

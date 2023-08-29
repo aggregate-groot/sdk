@@ -1,4 +1,6 @@
-﻿namespace AggregateGroot.CliCommands
+﻿using System;
+
+namespace AggregateGroot.CliCommands
 {
     /// <summary>
     /// Indicates that the property supports prompting for user input.

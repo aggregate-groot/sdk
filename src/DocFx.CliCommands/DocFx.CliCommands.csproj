@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>AggregateGroot.DocFx.CliCommands</AssemblyName>
+        <RootNamespace>AggregateGroot.DocFx.CliCommands</RootNamespace>
+        <Version>1.0.0</Version>
+        <PackageId>AggregateGroot.DocFx.CliCommands</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>David Palumbo</Authors>
+        <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
+      <ProjectReference Include="..\Templating\Templating.csproj" />
+    </ItemGroup>
+
+</Project>

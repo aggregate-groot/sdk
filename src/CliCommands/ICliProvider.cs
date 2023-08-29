@@ -1,4 +1,6 @@
-﻿namespace AggregateGroot.CliCommands
+﻿using System.Threading.Tasks;
+
+namespace AggregateGroot.CliCommands
 {
     /// <summary>
     /// Interface for types that provide CLI command execution.

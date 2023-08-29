@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
+
 using McMaster.Extensions.CommandLineUtils;
 
 namespace AggregateGroot.CliCommands
