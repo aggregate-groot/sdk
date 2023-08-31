@@ -1,4 +1,4 @@
-name: CI - Template Pack
+name: Publish - Template Pack
 
 on:
   push:
