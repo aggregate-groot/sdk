@@ -3,6 +3,7 @@ using System.Reflection;
 
 using McMaster.Extensions.CommandLineUtils;
 
+using AggregateGroot.Architecture.CliCommands;
 using AggregateGroot.DocFx.CliCommands;
 
 namespace AggregateGroot.Cli
@@ -11,7 +12,9 @@ namespace AggregateGroot.Cli
     /// Represents the root command for the CLI.
     /// </summary>
     [ExcludeFromCodeCoverage]
-    [Subcommand(typeof(DocFxCliCommand))]
+    [Subcommand(
+        typeof(DocFxCliCommand),
+        typeof(ArchitectureCliCommand))]
     public class RootCommand
     {
         /// <summary>

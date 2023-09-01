@@ -19,6 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Architecture.CliCommands\Architecture.CliCommands.csproj" />
       <ProjectReference Include="..\DocFx.CliCommands\DocFx.CliCommands.csproj" />
     </ItemGroup>
 
