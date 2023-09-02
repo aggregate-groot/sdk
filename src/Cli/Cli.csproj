@@ -4,7 +4,7 @@
         <OutputType>Exe</OutputType>
         <AssemblyName>ag</AssemblyName>
         <RootNamespace>AggregateGroot.Cli</RootNamespace>
-        <Version>1.0.0</Version>
+        <Version>1.1.0</Version>
         <PackageId>AggregateGroot.Cli</PackageId>
         <PackageVersion>$(Version)</PackageVersion>
         <PackAsTool>true</PackAsTool>
@@ -19,6 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Architecture.CliCommands\Architecture.CliCommands.csproj" />
       <ProjectReference Include="..\DocFx.CliCommands\DocFx.CliCommands.csproj" />
     </ItemGroup>
 

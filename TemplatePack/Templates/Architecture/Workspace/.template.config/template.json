@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Aggregate Groot",
+    "classifications": [ "architecture" ],
+    "identity": "AggregateGroot.Architecture.Workspace",
+    "name": "Architecture Workspace",
+    "shortName": "ag-architecture-workspace",
+    "sourceName": "Architecture_Workspace",
+    "tags": {
+        "language": "",
+        "type": "project"
+    },
+    "symbols": {
+        "source": {
+            "replaces": "Architecture_Workspace",
+            "type": "bind",
+            "datatype": "text",
+            "binding": "sourceName"
+        }
+     }
+  }
