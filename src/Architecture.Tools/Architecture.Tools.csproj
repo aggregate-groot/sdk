@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>AggregateGroot.Architecture.Tools</AssemblyName>
+        <RootNamespace>AggregateGroot.Architecture.Tools</RootNamespace>
+        <Version>1.0.0</Version>
+        <PackageId>AggregateGroot.Architecture.Tools</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>David Palumbo</Authors>
+        <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
+    </PropertyGroup>
+
+</Project>
