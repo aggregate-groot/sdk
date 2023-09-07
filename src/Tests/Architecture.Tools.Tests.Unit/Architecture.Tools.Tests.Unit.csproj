@@ -23,6 +23,19 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Architecture.Tools\Architecture.Tools.csproj" />
     </ItemGroup>
-
+    <ItemGroup>
+      <None Update="DecisionRecords\TestDecisions\Decisions\0001-decision-one.md">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="DecisionRecords\TestDecisions\Decisions\0256-decision-two.md">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="DecisionRecords\TestDecisions\TemplateTest\Templates\template.md">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="DecisionRecords\TestDecisions\Empty\empty.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 
 </Project>
