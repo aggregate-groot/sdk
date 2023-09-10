@@ -2,6 +2,7 @@
 
 using McMaster.Extensions.CommandLineUtils;
 
+using AggregateGroot.Architecture.CliCommands.DecisionRecords;
 using AggregateGroot.Architecture.CliCommands.Workspace;
 using AggregateGroot.CliCommands;
 
@@ -12,7 +13,9 @@ namespace AggregateGroot.Architecture.CliCommands
     /// </summary>
     [ExcludeFromCodeCoverage]
     [Command(Name = "architecture", Description = "Root command for working with architecture tasks.")]
-    [Subcommand(typeof(WorkspaceCliCommand))]
+    [Subcommand(
+        typeof(WorkspaceCliCommand),
+        typeof(DecisionRecordCliCommand))]
     public class ArchitectureCliCommand : CliCommand
     {
     

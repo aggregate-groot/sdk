@@ -3,7 +3,6 @@
     <PropertyGroup>
         <AssemblyName>AggregateGroot.CliCommands</AssemblyName>
         <RootNamespace>AggregateGroot.CliCommands</RootNamespace>
-        <Version>1.0.3</Version>
         <PackageId>AggregateGroot.CliCommands</PackageId>
         <PackageVersion>$(Version)</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

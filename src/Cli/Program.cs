@@ -3,6 +3,7 @@
 using McMaster.Extensions.CommandLineUtils;
 using Microsoft.Extensions.DependencyInjection;
 
+using AggregateGroot.Architecture.Tools;
 using AggregateGroot.CliCommands;
 using AggregateGroot.Templating;
 
@@ -26,6 +27,7 @@ namespace AggregateGroot.Cli
                 .AddSingleton(PhysicalConsole.Singleton)
                 .AddCliCommands()
                 .AddProjectTemplating()
+                .AddArchitectureTools()
                 .BuildServiceProvider();
 
             CommandLineApplication<RootCommand> application = new ();

@@ -33,5 +33,19 @@
         /// The value provided by the user.
         /// </returns>
         string GetRequiredString(string prompt, string defaultValue);
+        
+        /// <summary>
+        /// Prompt the user for a ushort value
+        /// </summary>
+        /// <param name="prompt">
+        /// Required test to display for the user.
+        /// </param>
+        /// <param name="defaultValue">
+        /// Value to display to the user for the default value.
+        /// </param>
+        /// <returns>
+        /// The value provided by the user.
+        /// </returns>
+        ushort GetUShort(string prompt, ushort defaultValue);
     }
 }

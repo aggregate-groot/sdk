@@ -3,7 +3,6 @@
     <PropertyGroup>
         <AssemblyName>AggregateGroot.Architecture.CliCommands</AssemblyName>
         <RootNamespace>AggregateGroot.Architecture.CliCommands</RootNamespace>
-        <Version>1.0.0</Version>
         <PackageId>AggregateGroot.Architecture.CliCommands</PackageId>
         <PackageVersion>$(Version)</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -12,6 +11,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Architecture.Tools\Architecture.Tools.csproj" />
       <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
       <ProjectReference Include="..\Templating\Templating.csproj" />
     </ItemGroup>

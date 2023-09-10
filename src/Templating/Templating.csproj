@@ -3,7 +3,6 @@
     <PropertyGroup>
         <AssemblyName>AggregateGroot.Templating</AssemblyName>
         <RootNamespace>AggregateGroot.Templating</RootNamespace>
-        <Version>1.0.0</Version>
         <PackageId>AggregateGroot.Templating</PackageId>
         <PackageVersion>$(Version)</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

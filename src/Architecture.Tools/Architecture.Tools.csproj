@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <AssemblyName>AggregateGroot.DocFx.CliCommands</AssemblyName>
-        <RootNamespace>AggregateGroot.DocFx.CliCommands</RootNamespace>
-        <PackageId>AggregateGroot.DocFx.CliCommands</PackageId>
+        <AssemblyName>AggregateGroot.Architecture.Tools</AssemblyName>
+        <RootNamespace>AggregateGroot.Architecture.Tools</RootNamespace>
+        <PackageId>AggregateGroot.Architecture.Tools</PackageId>
         <PackageVersion>$(Version)</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>David Palumbo</Authors>
@@ -11,8 +11,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
-      <ProjectReference Include="..\Templating\Templating.csproj" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
     </ItemGroup>
 
 </Project>
