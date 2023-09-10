@@ -43,5 +43,18 @@ namespace AggregateGroot.CliCommands
 
             return value;
         }
+        
+        /// <inheritdoc />
+        public ushort GetUShort(string prompt, ushort defaultValue)
+        {
+            int value = Prompt.GetInt(prompt, defaultValue);
+
+            if (value > ushort.MaxValue)
+            {
+                return ushort.MaxValue;
+            }
+            
+            return (ushort)value;
+        }
     }
 }
