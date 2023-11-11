@@ -16,6 +16,18 @@
             "type": "bind",
             "datatype": "text",
             "binding": "sourceName"
+        },
+        "architecture.workspace.port": {
+            "replaces": "11003",
+            "type": "parameter",
+            "datatype": "int",
+            "description": "The port that the architecture workspace will run on."
+        },
+        "docs.port": {
+          "replaces": "11002",
+          "type": "parameter",
+          "datatype": "int",
+          "description": "The port that the docs server will run on."
         }
      }   
   }

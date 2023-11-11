@@ -13,6 +13,6 @@ services:
   architecture:
     image: structurizr/lite:latest
     ports:
-      - 11003:8080
+      - "11003:8080"
     volumes:
       - ../Architecture:/usr/local/structurizr

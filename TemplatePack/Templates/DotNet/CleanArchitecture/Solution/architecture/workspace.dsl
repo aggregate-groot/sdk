@@ -1,5 +1,8 @@
 workspace {
 
+    name "ProductName"
+    description "About this workspace."
+
     !adrs decisions
 
     model {
