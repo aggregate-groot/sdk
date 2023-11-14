@@ -9,18 +9,18 @@ using Xunit;
 using AggregateGroot.Architecture.Tools.DecisionRecords;
 using AggregateGroot.Architecture.Tools.DecisionRecords.Markdown;
 
-namespace AggregateGroot.Architecture.Tools.Tests.Unit.DecisionRecords.Markdown
+namespace AggregateGroot.Architecture.Tools.Tests.Unit.DecisionRecords.Markdown.DecisionRecordWriterTests
 {
     /// <summary>
-    /// Unit tests for the <see cref="DecisionRecordWriter" /> class.
+    /// Specifies the behavior when writing a decision record to disk.
     /// </summary>
-    public class DecisionRecordWriterTest
+    public class WhenWriting
     {
         /// <summary>
         /// Tests that the expected decision record is written to disk.
         /// </summary>
         [Fact]
-        public async Task Should_Write_Decision_Record_To_Disk()
+        public async Task Decision_Record_Is_Written_To_Disk()
         {
             string directoryName = Guid.NewGuid().ToString();
             Directory.CreateDirectory(directoryName);
@@ -38,15 +38,16 @@ namespace AggregateGroot.Architecture.Tools.Tests.Unit.DecisionRecords.Markdown
             string firstLine = content.Split(Environment.NewLine).First();
             
             Assert.Equal("# 8. New Decision", firstLine);
+            
+            Directory.Delete(directoryName, true);
         }
 
         /// <summary>
-        /// Tests that passing a null decisionRecord argument will result
-        /// in an <see cref="ArgumentNullException" /> being thrown.
+        /// Tests that attempting to write a null decision record is rejected.
         /// </summary>
         [Fact]
         [ExcludeFromCodeCoverage]
-        public async Task Null_DecisionRecord_Should_Throw_Exception()
+        public async Task Null_Decision_Record_IsRejected()
         {
             DecisionRecordWriter writer = new("/");
             ArgumentNullException exception = await Assert.ThrowsAsync<ArgumentNullException>(

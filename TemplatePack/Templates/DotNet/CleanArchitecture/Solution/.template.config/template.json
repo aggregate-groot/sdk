@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Aggregate Groot",
+    "classifications": [ "AggregateGroot", "ASP.NET", "Clean Architecture" ],
+    "identity": "AggregateGroot.Templates.CleanArchitecture.Solution",
+    "name": "Clean Architecture Solution",
+    "shortName": "clean-architecture-solution",
+    "sourceName": "ProductName",
+    "tags": {
+      "language": "c#",
+      "type": "project"
+    },
+    "symbols": {
+        "productName": {
+            "replaces": "ProductName",
+            "type": "bind",
+            "datatype": "text",
+            "binding": "sourceName"
+        },
+        "architecture.workspace.port": {
+            "replaces": "11003",
+            "type": "parameter",
+            "datatype": "int",
+            "description": "The port that the architecture workspace will run on."
+        },
+        "docs.port": {
+          "replaces": "11002",
+          "type": "parameter",
+          "datatype": "int",
+          "description": "The port that the docs server will run on."
+        }
+     }   
+  }

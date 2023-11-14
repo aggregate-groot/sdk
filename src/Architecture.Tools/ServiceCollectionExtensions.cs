@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 using AggregateGroot.Architecture.Tools.DecisionRecords;
 using AggregateGroot.Architecture.Tools.DecisionRecords.Markdown;
+using AggregateGroot.Architecture.Tools.Diagrams;
 
 namespace AggregateGroot.Architecture.Tools
 {
@@ -27,7 +28,9 @@ namespace AggregateGroot.Architecture.Tools
                 .AddTransient<IDecisionRecordReader>(
                     _ => new DecisionRecordReader(Directory.GetCurrentDirectory()))
                 .AddTransient<IDecisionRecordWriter>(
-                    _ => new DecisionRecordWriter(Directory.GetCurrentDirectory()));
+                    _ => new DecisionRecordWriter(Directory.GetCurrentDirectory()))
+                .AddSingleton<IDiagramExporter, PuppeteerDiagramExporter>()
+                .AddSingleton<IDiagramTarget, FileSystemDiagramTarget>();
             
             return services;
         }
