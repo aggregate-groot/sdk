@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>AggregateGroot.Git.Tools</AssemblyName>
+        <RootNamespace>AggregateGroot.Git.Tools</RootNamespace>
+        <PackageId>AggregateGroot.Git.Tools</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>David Palumbo</Authors>
+        <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="GitIgnore\" />
+    </ItemGroup>
+
+</Project>
