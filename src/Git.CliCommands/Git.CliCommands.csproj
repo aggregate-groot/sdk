@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>AggregateGroot.Git.CliCommands</AssemblyName>
+        <RootNamespace>AggregateGroot.Git.CliCommands</RootNamespace>
+        <PackageId>AggregateGroot.Git.CliCommands</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>David Palumbo</Authors>
+        <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
+    </ItemGroup>
+
+</Project>
