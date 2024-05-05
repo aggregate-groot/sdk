@@ -36,7 +36,7 @@ namespace AggregateGroot.Architecture.Tools.Tests.Unit.Diagrams.FileSystemDiagra
         [InlineData("")]
         [InlineData(" ")]
         [ExcludeFromCodeCoverage]
-        public async Task Null_Path_IsRejected(string path)
+        public async Task Null_Path_IsRejected(string? path)
         {
             FileSystemDiagramTarget target = new ();
             Diagram diagram = new()
@@ -45,7 +45,7 @@ namespace AggregateGroot.Architecture.Tools.Tests.Unit.Diagrams.FileSystemDiagra
                 Name = "test"
             };
             ArgumentException exception = await Assert.ThrowsAsync<ArgumentException>(
-                () => target.WriteAsync(diagram, path));
+                () => target.WriteAsync(diagram, path!));
 
             Assert.Equal("path", exception.ParamName);
         }
