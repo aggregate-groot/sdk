@@ -10,8 +10,4 @@
         <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="GitIgnore\" />
-    </ItemGroup>
-
 </Project>
