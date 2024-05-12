@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
+      <ProjectReference Include="..\Git.Tools\Git.Tools.csproj" />
     </ItemGroup>
 
 </Project>
