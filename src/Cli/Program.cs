@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 using AggregateGroot.Architecture.Tools;
 using AggregateGroot.CliCommands;
+using AggregateGroot.Git.Tools;
 using AggregateGroot.Templating;
 
 namespace AggregateGroot.Cli
@@ -28,6 +29,7 @@ namespace AggregateGroot.Cli
                 .AddCliCommands()
                 .AddProjectTemplating()
                 .AddArchitectureTools()
+                .AddGitTooling()
                 .BuildServiceProvider();
 
             CommandLineApplication<RootCommand> application = new ();

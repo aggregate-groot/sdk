@@ -21,6 +21,7 @@
       <ProjectReference Include="..\Architecture.CliCommands\Architecture.CliCommands.csproj" />
       <ProjectReference Include="..\Architecture.Tools\Architecture.Tools.csproj" />
       <ProjectReference Include="..\DocFx.CliCommands\DocFx.CliCommands.csproj" />
+      <ProjectReference Include="..\Git.CliCommands\Git.CliCommands.csproj" />
     </ItemGroup>
 
 </Project>

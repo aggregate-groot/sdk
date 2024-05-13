@@ -1,8 +1,7 @@
-﻿using McMaster.Extensions.CommandLineUtils;
+﻿using AggregateGroot.Git.CliCommands.Ignore.Definitions;
+using McMaster.Extensions.CommandLineUtils;
 using NSubstitute;
 using Xunit;
-
-using AggregateGroot.Git.CliCommands.Definitions;
 using AggregateGroot.Git.Tools.GitIgnore;
 
 namespace Git.CliCommands.Tests.Unit.Ignore

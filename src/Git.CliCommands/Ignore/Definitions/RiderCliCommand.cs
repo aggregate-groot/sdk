@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
+using AggregateGroot.CliCommands;
 using McMaster.Extensions.CommandLineUtils;
 
-using AggregateGroot.CliCommands;
 using AggregateGroot.Git.Tools.GitIgnore;
 
-namespace AggregateGroot.Git.CliCommands.Definitions
+namespace AggregateGroot.Git.CliCommands.Ignore.Definitions
 {
     /// <summary>
     /// CLI command to ignore files in the current repository for Jet Brains Rider.
