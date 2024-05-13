@@ -13,14 +13,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.2" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Architecture.CliCommands\Architecture.CliCommands.csproj" />
       <ProjectReference Include="..\Architecture.Tools\Architecture.Tools.csproj" />
       <ProjectReference Include="..\DocFx.CliCommands\DocFx.CliCommands.csproj" />
+      <ProjectReference Include="..\Git.CliCommands\Git.CliCommands.csproj" />
     </ItemGroup>
 
 </Project>

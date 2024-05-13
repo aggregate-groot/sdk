@@ -128,11 +128,11 @@ namespace AggregateGroot.Architecture.Tools.Tests.Unit.DecisionRecords.Markdown
         [InlineData("")]
         [InlineData(" ")]
         [ExcludeFromCodeCoverage]
-        public async Task Null_TemplatePath_Should_Throw_Exception(string templatePath)
+        public async Task Null_TemplatePath_Should_Throw_Exception(string? templatePath)
         {
             DecisionRecord decisionRecord = new(512, "Some Decision");
             ArgumentException exception = await Assert.ThrowsAsync<ArgumentException>(
-                () => DecisionRecordTemplate.MergeAsync(decisionRecord, templatePath));
+                () => DecisionRecordTemplate.MergeAsync(decisionRecord, templatePath!));
 
             Assert.Equal("templatePath", exception.ParamName);
         }

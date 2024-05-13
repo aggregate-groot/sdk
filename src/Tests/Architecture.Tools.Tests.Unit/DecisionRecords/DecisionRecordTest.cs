@@ -50,10 +50,10 @@ namespace AggregateGroot.Architecture.Tools.Tests.Unit.DecisionRecords
         [InlineData("")]
         [InlineData(" ")]
         [ExcludeFromCodeCoverage]
-        public void Constructor_Should_Validate_Title(string title)
+        public void Constructor_Should_Validate_Title(string? title)
         {
             ArgumentException exception = Assert.Throws<ArgumentException>(
-                () => new DecisionRecord(1, title));
+                () => new DecisionRecord(1, title!));
 
             Assert.Equal("title", exception.ParamName);
         }

@@ -5,6 +5,7 @@ using McMaster.Extensions.CommandLineUtils;
 
 using AggregateGroot.Architecture.CliCommands;
 using AggregateGroot.DocFx.CliCommands;
+using AggregateGroot.Git.CliCommands;
 
 namespace AggregateGroot.Cli
 {
@@ -14,7 +15,8 @@ namespace AggregateGroot.Cli
     [ExcludeFromCodeCoverage]
     [Subcommand(
         typeof(DocFxCliCommand),
-        typeof(ArchitectureCliCommand))]
+        typeof(ArchitectureCliCommand),
+        typeof(GitCliCommand))]
     public class RootCommand
     {
         /// <summary>
