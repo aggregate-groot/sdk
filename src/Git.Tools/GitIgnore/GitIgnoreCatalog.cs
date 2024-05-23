@@ -24,5 +24,13 @@ namespace AggregateGroot.Git.Tools.GitIgnore
             ".idea/",
             "*.iml",
         }).ToArray();
+        
+        /// <summary>
+        /// Gets the list of paths to ignore for Visual Studio.
+        /// </summary>
+        public static string[] VisualStudio => DotNet.Concat(new []
+        {
+            ".vs/",
+        }).ToArray();
     }
 }

@@ -10,6 +10,7 @@ namespace AggregateGroot.Git.CliCommands.Ignore
     /// </summary>
     [Command("ignore", Description = "Ignore paths in the current repository.")]
     [Subcommand(typeof(RiderCliCommand))]
+    [Subcommand(typeof(VisualStudioCliCommand))]
     public class GitIgnoreCliCommand : CliCommand
     {
         

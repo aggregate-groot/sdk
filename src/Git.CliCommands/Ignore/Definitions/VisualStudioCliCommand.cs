@@ -8,31 +8,31 @@ using AggregateGroot.Git.Tools.GitIgnore;
 namespace AggregateGroot.Git.CliCommands.Ignore.Definitions
 {
     /// <summary>
-    /// CLI command to ignore paths in the current repository for Jet Brains Rider.
+    /// CLI command for adding Visual Studio paths to a .gitignore file.
     /// </summary>
-    [Command("rider", Description = "Ignore paths in the current repository for Rider.")]
-    public class RiderCliCommand : CliCommand
+    [Command("visual-studio", Description = "Ignore paths in the current repository for Visual Studio.")]
+    public class VisualStudioCliCommand : CliCommand
     {
         /// <summary>
-        /// Creates a new instance of the <see cref="RiderCliCommand" />.
+        /// Creates a new instance of the <see cref="VisualStudioCliCommand" />.
         /// </summary>
         /// <param name="gitIgnoreFile">
-        /// Required git ignore file to write the Rider paths to.
+        /// Required git ignore file to write the Visual Studio paths to.
         /// </param>
-        public RiderCliCommand(IGitIgnoreFile gitIgnoreFile)
+        public VisualStudioCliCommand(IGitIgnoreFile gitIgnoreFile)
         {
             ArgumentNullException.ThrowIfNull(gitIgnoreFile, nameof(gitIgnoreFile));
             _gitIgnoreFile = gitIgnoreFile;
         }
-        
+
         /// <inheritdoc />
         public override async Task<int> OnExecuteAsync(CommandLineApplication application)
         {
-            await _gitIgnoreFile.WriteLinesAsync(GitIgnoreCatalog.Rider);
+            await _gitIgnoreFile.WriteLinesAsync(GitIgnoreCatalog.VisualStudio);
 
             return 0;
         }
-        
+
         private readonly IGitIgnoreFile _gitIgnoreFile;
     }
 }
