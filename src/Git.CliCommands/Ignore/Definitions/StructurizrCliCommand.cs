@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Threading.Tasks;
-
 using AggregateGroot.CliCommands;
-using McMaster.Extensions.CommandLineUtils;
 
 using AggregateGroot.Git.Tools.GitIgnore;
+using McMaster.Extensions.CommandLineUtils;
 
 namespace AggregateGroot.Git.CliCommands.Ignore.Definitions
 {
     /// <summary>
-    /// CLI command for adding Visual Studio paths to a .gitignore file.
+    /// CLI command for adding Structurizr paths to a .gitignore file.
     /// </summary>
-    [Command("visual-studio", Description = "Ignore paths in the current repository for Visual Studio.")]
-    public class VisualStudioCliCommand : CliCommand
+    [Command("structurizr", Description = "Ignore paths in the current repository for Structurizr.")]
+    public class StructurizrCliCommand : CliCommand
     {
         /// <summary>
-        /// Creates a new instance of the <see cref="VisualStudioCliCommand" />.
+        /// Creates a new instance of the <see cref="StructurizrCliCommand" />.
         /// </summary>
         /// <param name="gitIgnoreFile">
-        /// Required git ignore file to write the Visual Studio paths to.
+        /// Required git ignore file to write the Structurizr paths to.
         /// </param>
-        public VisualStudioCliCommand(IGitIgnoreFile gitIgnoreFile)
+        public StructurizrCliCommand(IGitIgnoreFile gitIgnoreFile)
         {
             ArgumentNullException.ThrowIfNull(gitIgnoreFile, nameof(gitIgnoreFile));
             _gitIgnoreFile = gitIgnoreFile;
@@ -29,8 +28,7 @@ namespace AggregateGroot.Git.CliCommands.Ignore.Definitions
         /// <inheritdoc />
         public override async Task<int> OnExecuteAsync(CommandLineApplication application)
         {
-            await _gitIgnoreFile.WriteLinesAsync(GitIgnoreCatalog.VisualStudio);
-
+            await _gitIgnoreFile.WriteLinesAsync(GitIgnoreCatalog.Structurizr);
             return 0;
         }
 

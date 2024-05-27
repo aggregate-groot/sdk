@@ -10,7 +10,7 @@ namespace AggregateGroot.Git.Tools.GitIgnore
         /// <summary>
         /// Gets the list of paths to ignore for .NET.
         /// </summary>
-        public static string[] DotNet => new []
+        public static string[] DotNet { get; } = new []
         {
             "bin/",
             "obj/",
@@ -19,7 +19,7 @@ namespace AggregateGroot.Git.Tools.GitIgnore
         /// <summary>
         /// Gets the list of paths to ignore for Jet Brains Rider.
         /// </summary>
-        public static string[] Rider => DotNet.Concat(new []
+        public static string[] Rider { get; } = DotNet.Concat(new []
         {
             ".idea/",
             "*.iml",
@@ -28,9 +28,17 @@ namespace AggregateGroot.Git.Tools.GitIgnore
         /// <summary>
         /// Gets the list of paths to ignore for Visual Studio.
         /// </summary>
-        public static string[] VisualStudio => DotNet.Concat(new []
+        public static string[] VisualStudio { get; } = DotNet.Concat(new []
         {
             ".vs/",
         }).ToArray();
+
+        /// <summary>
+        /// Gets the list of paths to ignore for Structurizr.
+        /// </summary>
+        public static string[] Structurizr { get; } = new[]
+        {
+            ".structurizr/",
+        };
     }
 }
