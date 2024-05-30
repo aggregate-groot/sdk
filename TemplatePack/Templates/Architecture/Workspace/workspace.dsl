@@ -1,5 +1,8 @@
 workspace {
 
+    name "_WorkspaceName_"
+    description "_WorkspaceDescription_"
+
     !adrs decisions
 
     model {

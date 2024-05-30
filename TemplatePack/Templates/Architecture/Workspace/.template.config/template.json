@@ -16,6 +16,20 @@
             "type": "bind",
             "datatype": "text",
             "binding": "sourceName"
+        },
+        "workspaceName": {
+            "replaces": "_WorkspaceName_",
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "Workspace",
+            "description": "The name of the architecture workspace."
+        },
+        "workspaceDescription": {
+            "replaces": "_WorkspaceDescription_",
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "Architecture workspace.",
+            "description": "The description of the architecture workspace."
         }
      }
   }
