@@ -1,4 +1,5 @@
-﻿using McMaster.Extensions.CommandLineUtils;
+﻿using System.Threading.Tasks;
+using McMaster.Extensions.CommandLineUtils;
 using NSubstitute;
 using Xunit;
 
