@@ -24,11 +24,8 @@ namespace AggregateGroot.Architecture.Tools.DecisionRecords.Markdown
         /// <inheritdoc />
         public async Task WriteDecisionAsync(DecisionRecord decisionRecord)
         {
-            if (decisionRecord == null)
-            {
-                throw new ArgumentNullException(nameof(decisionRecord));
-            }
-            
+            ArgumentNullException.ThrowIfNull(decisionRecord);
+
             string fileName = GetFileName(decisionRecord);
             string templatePath = Path.Combine(_decisionsDirectory, "Templates", "template.md");
 
