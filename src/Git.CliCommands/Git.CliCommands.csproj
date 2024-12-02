@@ -11,6 +11,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="CliWrap" Version="3.6.7" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
       <ProjectReference Include="..\Git.Tools\Git.Tools.csproj" />
     </ItemGroup>
