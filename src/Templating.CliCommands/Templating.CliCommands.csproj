@@ -10,4 +10,9 @@
         <RepositoryUrl>https://github.com/aggregate-groot/sdk</RepositoryUrl>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CliCommands\CliCommands.csproj" />
+      <ProjectReference Include="..\Templating\Templating.csproj" />
+    </ItemGroup>
+
 </Project>
