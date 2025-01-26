@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Aggregate Groot",
+    "classifications": [ "Template" ],
+    "identity": "AggregateGroot.Templating.DotNetNew",
+    "name": "Aggregate Groot dotnet new Template",
+    "shortName": "ag-dotnet-new-template",
+    "sourceName": "TemplateName",
+    "tags": {
+      "type": "project"
+    },
+    "sources": [{
+        "rename": {
+            "template.config.source": ".template.config",
+            "template.source.json": "template.json"
+        }
+    }],
+    "symbols": {
+        "templateName": {
+            "replaces": "_TemplateName_",
+            "type": "bind",
+            "datatype": "text",
+            "binding": "sourceName"
+        },
+        "author": {
+            "replaces": "_Author_",
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "Aggregate Groot",
+            "description": "The author of the template."
+        },
+        "classification": {
+            "replaces": "_Classification_",
+            "type": "parameter",
+            "description": "The type of classification for the template.",
+            "defaultValue": "IZS"
+        },
+        "identity": {
+            "replaces": "_Identity_",
+            "type": "parameter",
+            "description": "The Identity for the template."
+        },
+        "shortName": {
+            "replaces": "_ShortName_",
+            "type": "parameter",
+            "description": "The short name for the template."
+        },
+        "templateType": {
+            "replaces": "_TemplateType_",
+            "choices": ["item", "project"],
+            "type": "parameter",
+            "datatype": "text",
+            "description": "The template type (item or project).",
+            "defaultValue": "project"
+        }
+     }
+  }
