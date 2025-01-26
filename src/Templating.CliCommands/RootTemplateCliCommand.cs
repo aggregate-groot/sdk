@@ -3,6 +3,7 @@
 using McMaster.Extensions.CommandLineUtils;
 
 using AggregateGroot.CliCommands;
+using AggregateGroot.Templating.CliCommands.DotNetNew;
 using AggregateGroot.Templating.CliCommands.TemplatePack;
 
 namespace AggregateGroot.Templating.CliCommands
@@ -13,9 +14,9 @@ namespace AggregateGroot.Templating.CliCommands
     [ExcludeFromCodeCoverage]
     [Command(Name = "template", Description = "Root command for working with source templates.")]
     [Subcommand(
-        typeof(TemplatePackCliCommand))]
+        typeof(TemplatePackCliCommand),
+        typeof(DotNetNewCliCommand))]
     public class RootTemplateCliCommand : CliCommand
     {
-        
     }
 }
