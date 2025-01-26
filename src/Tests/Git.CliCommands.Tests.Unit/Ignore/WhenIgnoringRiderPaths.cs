@@ -1,4 +1,5 @@
-﻿using AggregateGroot.Git.CliCommands.Ignore.Definitions;
+﻿using System.Threading.Tasks;
+using AggregateGroot.Git.CliCommands.Ignore.Definitions;
 using McMaster.Extensions.CommandLineUtils;
 using NSubstitute;
 using Xunit;

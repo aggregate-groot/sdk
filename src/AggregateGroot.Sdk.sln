@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.CliCommands", "Git.CliC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.CliCommands.Tests.Unit", "Tests\Git.CliCommands.Tests.Unit\Git.CliCommands.Tests.Unit.csproj", "{FC46EBA9-E3DF-4A83-A469-E628F56F363A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templating.CliCommands", "Templating.CliCommands\Templating.CliCommands.csproj", "{B059FD36-769C-4898-AA73-B9B87C36DBE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templating.CliCommands.Tests.Unit", "Tests\Templating.CliCommands.Tests.Unit\Templating.CliCommands.Tests.Unit.csproj", "{94D5D1B9-0496-4870-B540-B7E6E6F63634}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +102,14 @@ Global
 		{FC46EBA9-E3DF-4A83-A469-E628F56F363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC46EBA9-E3DF-4A83-A469-E628F56F363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC46EBA9-E3DF-4A83-A469-E628F56F363A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B059FD36-769C-4898-AA73-B9B87C36DBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B059FD36-769C-4898-AA73-B9B87C36DBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B059FD36-769C-4898-AA73-B9B87C36DBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B059FD36-769C-4898-AA73-B9B87C36DBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D5D1B9-0496-4870-B540-B7E6E6F63634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D5D1B9-0496-4870-B540-B7E6E6F63634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D5D1B9-0496-4870-B540-B7E6E6F63634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D5D1B9-0496-4870-B540-B7E6E6F63634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1392848C-A6A6-401D-A156-452C011C22CD} = {5D2E66F6-B020-44BB-ACBE-5F9CFD77BBBE}
@@ -107,5 +119,6 @@ Global
 		{B458AB5D-A68D-4FE4-80A9-C2A9D7F1C850} = {5D2E66F6-B020-44BB-ACBE-5F9CFD77BBBE}
 		{166607D2-E417-46EF-8695-45DBEFA37308} = {5D2E66F6-B020-44BB-ACBE-5F9CFD77BBBE}
 		{FC46EBA9-E3DF-4A83-A469-E628F56F363A} = {5D2E66F6-B020-44BB-ACBE-5F9CFD77BBBE}
+		{94D5D1B9-0496-4870-B540-B7E6E6F63634} = {5D2E66F6-B020-44BB-ACBE-5F9CFD77BBBE}
 	EndGlobalSection
 EndGlobal

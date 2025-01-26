@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Aggregate Groot",
+    "classifications": [ "template" ],
+    "identity": "AggregateGroot.Templating.TemplatePack",
+    "name": "Template Pack",
+    "shortName": "ag-template-pack",
+    "sourceName": "Source",
+    "tags": {
+        "language": "",
+        "type": "project"
+    },
+    "symbols": {
+        "packageId": {
+            "replaces": "_PackageId_",
+            "type": "parameter",
+            "datatype": "text",
+            "description": "The unique identifier for the template pack."
+        },
+        "author": {
+            "replaces": "_Author_",
+            "type": "parameter",
+            "datatype": "text",
+            "description": "The author of the template pack."
+        },
+        "title": {
+            "replaces": "_Title_",
+            "type": "parameter",
+            "datatype": "text",
+            "description": "The title of the template pack."
+        },
+        "description": {
+            "replaces": "_Description_",
+            "type": "parameter",
+            "datatype": "text",
+            "description": "The description for the template pack."
+        }
+     }
+  }

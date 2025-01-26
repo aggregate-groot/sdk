@@ -3,8 +3,8 @@
     <PropertyGroup>
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-        <AssemblyName>AggregateGroot.CliCommands.Tests.Unit</AssemblyName>
-        <RootNamespace>AggregateGroot.CliCommands.Tests.Unit</RootNamespace>
+        <AssemblyName>AggregateGroot.Templating.CliCommands.Tests.Unit</AssemblyName>
+        <RootNamespace>AggregateGroot.Templating.CliCommands.Tests.Unit</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -29,7 +29,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\CliCommands\CliCommands.csproj" />
+      <ProjectReference Include="..\..\Templating.CliCommands\Templating.CliCommands.csproj" />
     </ItemGroup>
 
 </Project>

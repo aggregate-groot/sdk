@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "_Author_",
+    "classifications": [ "_Classification_" ],
+    "identity": "_Identity_",
+    "name": "__TemplateName",
+    "shortName": "_ShortName_",
+    "sourceName": "TemplateName",
+    "tags": {
+        "language": "",
+        "type": "_TemplateType_"
+    },
+    "symbols": {
+        "source": {
+            "replaces": "TemplateName",
+            "type": "bind",
+            "datatype": "text",
+            "binding": "sourceName"
+        }
+     }
+  }
