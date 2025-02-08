@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Aggregate Groot",
+    "classifications": [ ".NET" ],
+    "identity": "AggregateGroot.DotNet.DirectoryBuildProperties",
+    "name": "DirectoryBuildProperties",
+    "shortName": "ag-directory-build-props",
+    "tags": {
+        "language": "",
+        "type": "item"
+    },
+    "sources": [{
+        "rename": {
+            "Directory.Build.props.source": "Directory.Build.props"
+        }
+    }],
+    "symbols": {
+        "dotNetVersion": {
+            "replaces": "_DotNetVersion_",
+            "type": "parameter",
+            "datatype": "text",
+            "description": "The .NET version for the project.",
+            "defaultValue": "net8.0"
+        }
+     }
+  }
