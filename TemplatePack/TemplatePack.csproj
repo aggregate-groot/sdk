@@ -2,7 +2,7 @@
 
     <PropertyGroup>
       <PackageType>Template</PackageType>
-      <PackageVersion>1.3.0</PackageVersion>
+      <PackageVersion>1.4.0</PackageVersion>
       <PackageId>AggregateGroot.TemplatePack</PackageId>
       <Title>Aggregate Groot Template Pack</Title>
       <Authors>Iteration Zero Software</Authors>

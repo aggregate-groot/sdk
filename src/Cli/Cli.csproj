@@ -15,14 +15,15 @@
     <ItemGroup>
       <PackageReference Include="CliWrap" Version="3.7.1" />
       <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.1" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Architecture.CliCommands\Architecture.CliCommands.csproj" />
       <ProjectReference Include="..\Architecture.Tools\Architecture.Tools.csproj" />
       <ProjectReference Include="..\DocFx.CliCommands\DocFx.CliCommands.csproj" />
+      <ProjectReference Include="..\DotNet.CliCommands\DotNet.CliCommands\DotNet.CliCommands.csproj" />
       <ProjectReference Include="..\Git.CliCommands\Git.CliCommands.csproj" />
       <ProjectReference Include="..\Templating.CliCommands\Templating.CliCommands.csproj" />
     </ItemGroup>

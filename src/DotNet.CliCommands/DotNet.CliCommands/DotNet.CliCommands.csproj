@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>AggregateGroot.DotNet.CliCommands.DotNet.CliCommands</AssemblyName>
+        <RootNamespace>AggregateGroot.DotNet.CliCommands.DotNet.CliCommands</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\CliCommands\CliCommands.csproj" />
+      <ProjectReference Include="..\..\Templating\Templating.csproj" />
+    </ItemGroup>
+
+</Project>
