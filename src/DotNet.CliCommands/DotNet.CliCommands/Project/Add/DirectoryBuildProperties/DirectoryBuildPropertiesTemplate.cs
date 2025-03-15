@@ -8,7 +8,7 @@ namespace AggregateGroot.DotNet.CliCommands.DotNet.CliCommands.Project.Add.Direc
     public class DirectoryBuildPropertiesTemplate : ISourceTemplate
     {
         /// <inheritdoc />
-        public string Name => "izs-directory-build-props";
+        public string Name => "ag-directory-build-props";
         
         /// <summary>
         /// Gets or initializes the .NET SDK version.

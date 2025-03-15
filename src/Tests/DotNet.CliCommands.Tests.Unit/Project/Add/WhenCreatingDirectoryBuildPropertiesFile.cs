@@ -31,7 +31,7 @@ namespace DotNet.CliCommands.Tests.Unit.Project.Add
             await command.OnExecuteAsync(new CommandLineApplication());
             
             Assert.NotNull(template);
-            Assert.Equal("izs-directory-build-props", template.Name);
+            Assert.Equal("ag-directory-build-props", template.Name);
             Assert.Equal(command.DotNetVersion, template.DotNetVersion);
         }
     }

@@ -2,6 +2,7 @@
 
 using AggregateGroot.CliCommands;
 using AggregateGroot.DotNet.CliCommands.DotNet.CliCommands.Project.Add;
+using AggregateGroot.DotNet.CliCommands.DotNet.CliCommands.Project.New;
 
 namespace AggregateGroot.DotNet.CliCommands.DotNet.CliCommands.Project
 {
@@ -10,7 +11,8 @@ namespace AggregateGroot.DotNet.CliCommands.DotNet.CliCommands.Project
     /// </summary>
     [Command(Name = "project", Description = "Work with .NET projects.")]
     [Subcommand(
-        typeof(AddCliCommand))]
+        typeof(AddCliCommand),
+        typeof(NewCliCommand))]
     public class ProjectCliCommand : CliCommand
     {
     }
