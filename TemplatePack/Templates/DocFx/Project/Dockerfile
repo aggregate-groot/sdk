@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine as docfx
+FROM mcr.microsoft.com/dotnet/sdk:_DotNetVersion_-alpine as docfx
 WORKDIR /build
 
 RUN dotnet tool update -g docfx

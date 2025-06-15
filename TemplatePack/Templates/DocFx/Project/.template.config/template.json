@@ -9,13 +9,18 @@
     "tags": {
         "language": "",
         "type": "project"
-    },
-    "symbols": {
+    },    "symbols": {
         "source": {
             "replaces": "DocFxProject",
             "type": "bind",
             "datatype": "text",
             "binding": "sourceName"
+        },
+        "dotnetVersion": {
+            "replaces": "_DotNetVersion_",
+            "type": "parameter",
+            "datatype": "text",
+            "defaultValue": "9.0"
         }
      }
   }
